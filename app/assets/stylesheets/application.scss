@@ -11,5 +11,11 @@
  * file per style scope.
  *
  */
+$navbar-height: 40px;
+
  @import "bootstrap-sprockets";
  @import "bootstrap";
+
+ .center {
+     text-align: center;
+ }
