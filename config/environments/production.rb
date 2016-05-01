@@ -83,7 +83,7 @@ Rails.application.configure do
   # config for paperclip and herokuap
   config.paperclip_defaults = {
     :storage => :s3,
-    :s3_region => 'us-east-1'
+    :s3_region => 'us-east-1',
     :s3_credentials => {
       :bucket => ENV['punterested'],
       :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
