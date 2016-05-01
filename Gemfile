@@ -15,6 +15,8 @@ gem 'spring',                     group: :development
 gem 'devise',         '~> 3.4.1'
 gem 'paperclip'
 gem 'aws-sdk', '< 2.0'
+gem 'jquery-turbolinks'
+gem 'masonry-rails', '~> 0.2.0'
 
 group :development, :test do
   gem 'sqlite3',        '1.3.9'
