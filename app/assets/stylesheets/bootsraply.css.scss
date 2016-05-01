@@ -1,10 +1,15 @@
 $navbar-height: 40px;
-$pagination-disabled-bg: #C2C2C2;
+$pagination-disabled-bg: #C9C9C9;
 $pagination-active-bg: #103AFF;
 $pagination-hover-bg: #FFC14F;
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "font-awesome";
+
+body {
+  background-color: #EDEDED;
+}
 
 .center {
     text-align: center;
@@ -20,4 +25,10 @@ $pagination-hover-bg: #FFC14F;
 
 #nav-links a:hover {
   color: #103AFF;
+}
+
+.box-shadow {
+  -webkit-box-shadow: 0px 0px 15px 3px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 0px 15px 3px rgba(0,0,0,1);
+  box-shadow: 0px 0px 15px 3px rgba(0,0,0,1);
 }

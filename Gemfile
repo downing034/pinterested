@@ -19,6 +19,7 @@ gem 'jquery-turbolinks'
 gem 'masonry-rails',            '~> 0.2.0'
 gem 'will_paginate',            '~> 3.1'
 gem 'will_paginate-bootstrap',  '~> 1.0.1'
+gem 'font-awesome-rails',       '~> 4.6', '>= 4.6.1.0'
 
 group :development, :test do
   gem 'sqlite3',        '1.3.9'
