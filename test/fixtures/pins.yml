@@ -1,7 +1,7 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  description: MyString
+  pun_text: MyString
 
 two:
-  description: MyString
+  pun_text: MyString

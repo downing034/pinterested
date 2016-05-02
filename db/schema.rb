@@ -11,10 +11,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160501074552) do
+ActiveRecord::Schema.define(version: 20160502030520) do
 
   create_table "pins", force: :cascade do |t|
-    t.string   "description"
+    t.string   "pun_text"
     t.datetime "created_at",         null: false
     t.datetime "updated_at",         null: false
     t.integer  "user_id"
