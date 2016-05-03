@@ -4,17 +4,22 @@
     <div class="box box-shadow">
       <div class="panel panel-default">
         <%= link_to (image_tag pin.image.url(:medium)), pin %><br/>
-        <div class="panel-body">
-          <em>"<%= pin.pun_text %>"</em><br/>
-          <strong><%= pin.user.name if pin.user %></strong><br/>
+        <div class="panel-heading center">
+          <em>"<%= pin.pun_text %>"</em>
         </div>
-        <% if pin.user == current_user %>
-          <div class="panel-footer">
-            <%= link_to 'Edit', edit_pin_path(pin) %> |
-            <%= link_to 'Destroy', pin, method: :delete, data: { confirm: 'Are you sure?' } %><br/>
-          </div>
-        <% end %>
+        <div class="panel-body panel-category">
+          <h6>Category: <%= pin.category %></h6>
+        </div>
+        <div class="panel-footer">
+          <h6>Added By: <strong><%= pin.user.name if pin.user %></strong></h6>
+        </div>
       </div>
+      <% if pin.user == current_user %>
+        <div class="center">
+          <%= link_to 'Edit', edit_pin_path(pin) %> |
+          <%= link_to 'Destroy', pin, method: :delete, data: { confirm: 'Are you sure?' } %><br/>
+        </div>
+      <% end %>
     </div>
   <% end %>
 </div>

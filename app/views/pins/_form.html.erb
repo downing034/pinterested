@@ -12,8 +12,12 @@
   <% end %>
 
   <div class="field form-group">
-    <%= f.label :pun_text, "Pun" %><br>
+    <%= f.label :pun_text, "Pun" %>
     <%= f.text_field :pun_text, class: 'form-control' %>
+  </div>
+  <div class="field form-group">
+    <%= f.label :category %>
+    <%= f.text_field :category, class: 'form-control' %>
   </div>
   <div class="field form-group">
     <%= f.label :image %>
